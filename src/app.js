@@ -1,27 +1,34 @@
-/* eslint-disable */
-import "bootstrap";
 import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  document.querySelector("#excuse").innerHTML = genExcuse();
-  console.log();
-};
-function genExcuse() {
-  let who = ["the dog", "my granma", "his turtle", "my bird"];
-  let what = ["eat", "pissed", "crushed", "broked"];
-  let when = [
-    "before the class",
-    "right in time",
-    "when I finished",
-    "during my lunch",
-    "while I was praying"
+  console.log("Hello Rigo from the console!");
+
+  let palos = [" ♦ ", "♠ ", "♣", "♥ "];
+  let numeros = [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "C",
+    "R",
+    "AS"
   ];
-  let rdm1 = Math.floor(Math.random() * who.length);
-  let rdm2 = Math.floor(Math.random() * what.length);
-  let rdm3 = Math.floor(Math.random() * when.length);
-  return who[rdm1] + " " + what[rdm2] + " " + when[rdm3];
-}
+  //creacion de randoms
+  let rdm1 = Math.floor(Math.random() * palos.length);
+  let rdm2 = Math.floor(Math.random() * numeros.length);
+  // seleccion de elementos
+  let top = document.querySelector(".top");
+  let number = document.querySelector(".number");
+  let abajo = document.querySelector(".abajo");
+  // modificacion de elemtos
+  top.innerHTML = palos[rdm1];
+  number.innerHTML = numeros[rdm2];
+  abajo.innerHTML = palos[rdm1];
+};

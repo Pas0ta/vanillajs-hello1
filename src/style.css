@@ -1,1 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.top {
+  font-size: 100px;
+  margin-top: -22px;
+}
+.number {
+  text-align: center;
+  font-size: 140px;
+}
+.conteiner {
+  position: center;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  block-size: 500px;
+}
+.abajo {
+  font-size: 100px;
+  float: right;
+  margin-top: 20px;
+}
